@@ -12,3 +12,6 @@ From the website:
 
 The repo contains the main module and two example notebooks, illustrating how to query radiation data and how to obtain 
 PV power production results through [pvlib](http://pvlib-python.readthedocs.io/en/latest).
+
+__note__: CAMS radiation data are in __$wh/m^2$__, but libraries such as pvlib expect inputs in terms of power (for a number of good reasons), 
+therefore it is necessary to scale the data when working with timesteps different than one hour.
