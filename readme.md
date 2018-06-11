@@ -9,3 +9,6 @@ From the website:
 * The service main page is available [here](http://www.soda-pro.com/web-services/radiation/cams-radiation-service)
 * For info about the API, see [here](http://www.soda-pro.com/help/cams-services/cams-radiation-service/automatic-access#wget)
 * For exampe scripts, see [here](http://www.soda-pro.com/help/automatic-access/examples-of-scripts)
+
+The repo contains the main module and two example notebooks, illustrating how to query radiation data and how to obtain 
+PV power production results through [pvlib](http://pvlib-python.readthedocs.io/en/latest).
