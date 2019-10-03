@@ -104,9 +104,9 @@ class Client():
 
     def _set_index(self, df):
         """Set pd.DatetimeIndex to dataframe."""
-        index = pd.DatetimeIndex(start=self.start, end=self.end, 
-                                 freq=pd.Timedelta(minutes=self.timestep), 
-                                 closed='left')
+        index = pd.date_range(start=self.start, end=self.end, 
+                              freq=pd.Timedelta(minutes=self.timestep), 
+                              closed='left')
         
         df.set_index(index, inplace=True)      
   
